@@ -196,7 +196,7 @@ taskkill /f /t /im xmrig.exe
 
 :REMOVE_DIR0
 echo [*] Removing "%USERPROFILE%\c3pool" directory
-timeout 5
+
 rmdir /q /s "%USERPROFILE%\c3pool" >NUL 2>NUL
 IF EXIST "%USERPROFILE%\c3pool" GOTO REMOVE_DIR0
 
